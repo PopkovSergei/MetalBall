@@ -1,0 +1,24 @@
+<resources>
+
+   <string name="app_name">Metal Ball</string>
+    
+    <string name="menu_start_game">POCZATEK</string>
+    <string name="menu_quick_game">KONTYNUOWAC</string>
+    <string name="menu_settings_game">USTAWIENIA</string>
+    <string name="instruction">INSTRUKCJA</string>
+    <string name="Help">POMOC DEWELOPER</string>
+    <string name="menu_exit">WYJSCIE</string>
+    
+    <string name="setting_sound">Dzwieki</string>
+    <string name="setting_music">Muzyka</string>
+    <string name="setting_vibrate">Wibracje</string>
+    <string name="setting_ON">ON</string>
+    <string name="setting_OFF">OFF</string>
+    <string name="setting_Cancel">Anuluj</string>
+
+    <string name="restart">Ponownie</string>
+    <string name="menu">Menu</string>
+    <string name="game_over">GAME OVER</string>
+
+    
+</resources>
