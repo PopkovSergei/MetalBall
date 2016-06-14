@@ -1,6 +1,7 @@
 package com.popkov.metalball.PackageGame;
 
 import android.content.Context;
+import android.view.InflateException;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -17,6 +18,9 @@ public class GraphicsView extends SurfaceView implements SurfaceHolder.Callback 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
 
+        drewThread = new DrawThread(getHolder(),getResources());
+        drewThread.run();
+
     }
 
     @Override
@@ -26,6 +30,18 @@ public class GraphicsView extends SurfaceView implements SurfaceHolder.Callback 
 
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
+
+        boolean retry = true;
+        while (retry){
+
+            try{
+            drewThread.join();
+            retry = false;}
+            catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+
 
     }
 

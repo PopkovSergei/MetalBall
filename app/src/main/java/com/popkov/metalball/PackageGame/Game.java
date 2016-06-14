@@ -10,7 +10,7 @@ import android.view.Window;
 
 public class Game extends Activity {
 
-    int nMap = 1;
+    //int nMap = 1;
     final String TAG ="Game";
 
 
@@ -24,7 +24,10 @@ public class Game extends Activity {
         int height = display.getHeight();
         Log.d(TAG,"width ="+ width + "height = " + height);
 
-        setContentView(new GraphicsView(this));
+        GraphicsView graphicsView = new GraphicsView(this);
+
+
+        setContentView(graphicsView);
 
     }
 

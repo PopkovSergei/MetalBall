@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 
 public class Settings extends Activity implements OnClickListener  {
-	
+
 	TextView vibrateOnOff,musicOnOff,soundOnOff;
 	Boolean vibrateBool,musicBool,soundBool;
 	EditText cardSize,colors;
